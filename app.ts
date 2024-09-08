@@ -35,6 +35,7 @@ const renderResume = () => {
   // Resume content for rendering (with edit/delete buttons)
   const renderedContent = `
     <style>
+    
       .resume-container {
         width: 80%;
         margin: 20px auto;
@@ -54,6 +55,38 @@ const renderResume = () => {
         margin-top: 20px;
         margin-bottom: 10px;
       }
+
+      @media only screen and (max-width: 650px) {
+         /* For mobile phones: */
+        .resume-container {
+            width: 90%; /* Adjust the width to fit better on mobile screens */
+            padding: 15px; /* Adjust padding for smaller screens */
+           font-size: 14px; /* Decrease font size slightly for readability on small screens */
+        }
+
+      .personal-info {
+          display: block; /* Stack the elements vertically */
+          text-align: center; /* Center align for a cleaner layout */
+          margin: 0 auto; /* Center the personal info section */
+        }
+
+      .profile-picture {
+          width: 80px; /* Make the profile picture smaller */
+          height: 80px; /* Adjust the height to match the width */
+          margin: 0 auto 10px; /* Center and add some margin below the image */
+        }
+
+      .section-title {
+          font-size: 16px; /* Adjust font size for section titles */
+          margin-top: 15px;
+          margin-bottom: 8px;
+        }
+
+      .education-item, .skills-item, .work-experience-item {
+          font-size: 14px; /* Adjust font size for list items */
+  }
+}
+
       .personal-info, .education-list, .skills-list, .work-experience-list {
         margin-left: 20px;
       }
