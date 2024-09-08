@@ -8,11 +8,14 @@
   </head>
   <body>
     <div class="container">
-      <h1>Milestone 5: Unique Path and Shareable Link</h1>
+      <h1 class="header">Milestone 5: Unique Path and Shareable Link</h1>
 
       <form id="resumeForm">
         <fieldset>
           <legend>Personal Information</legend>
+          <label for="username">username (for Resume URL)</label>
+          <input type="username" name="username" id="username" required>
+
            <!-- Profile Picture -->
     <label for="profilePicture">Profile Picture:</label>
     <input type="file" id="profilePicture" accept="image/*" />
@@ -78,12 +81,15 @@
         </fieldset>
 
         <button type="submit" class="btn">Generate Resume</button>
-        <button type="button" id="printResume" class="btn">Print Resume</button>
+        <button type="button" id="printResume" class="btn">Print in PDF</button>
+        
       </form>
-
+      
+      
       <div id="resumeOutput" class="resume-output">
         Resume will be displayed here
       </div>
+
     </div>
     <script src="app.js"></script>
   </body>

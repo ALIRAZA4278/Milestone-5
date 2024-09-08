@@ -79,6 +79,9 @@ button:hover {
 }
 
 @media print {
+  .container .header {
+    display: none;
+  }
   form {
     display: none;
   }
@@ -93,6 +96,10 @@ button:hover {
   }
 
   button {
+    display: none;
+  }
+
+  #printResume {
     display: none;
   }
 }
