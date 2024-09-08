@@ -102,6 +102,15 @@ button:hover {
   #printResume {
     display: none;
   }
+  #username{
+    display: none;
+  }
+  a{
+    display: none;
+  }
+  .resume-output {
+    border: none;
+  }
 }
 
 #profilePicturePreview {

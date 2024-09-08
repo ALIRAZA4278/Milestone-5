@@ -220,6 +220,9 @@ const renderResume = () => {
   button {
     display: none;
   }
+  #username{
+    display: none;
+  }
 }
 
 #profilePicturePreview {
@@ -388,7 +391,7 @@ const renderResume = () => {
     downloadLink.href =
       "data:text/html;charset=UTF-8," + encodeURIComponent(downloadContent);
     downloadLink.download = uniquePath;
-    downloadLink.textContent = "Download your resume as HTML";
+    downloadLink.textContent = "Download your resume";
 
     // Clear previous link if any and append new one
     const existingLink = resumeOutput.querySelector("a[download]");
@@ -453,10 +456,10 @@ resumeForm.addEventListener("submit", (e) => {
   renderResume();
 });
 
-// Print Functionality
-document.getElementById("printResume")?.addEventListener("click", () => {
-  window.print();
-});
+// // Print Functionality
+// document.getElementById("printResume")?.addEventListener("click", () => {
+//   window.print();
+// });
 
 // Profile Picture Handler
 profilePictureInput.addEventListener("change", (event) => {
